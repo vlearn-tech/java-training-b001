@@ -23,5 +23,11 @@ public class ConsolePrinting {
 		System.out.format("Name is %s and age is %d", name, age);
 		System.out.println(String.format("Name is %s and age is %d", name, age));
 
+		System.out.println(String.format("%d", 1));
+
+		System.out.println("The line before");
+		System.out.println("\n");
+		System.out.println("The line after");
+
 	}
 }
