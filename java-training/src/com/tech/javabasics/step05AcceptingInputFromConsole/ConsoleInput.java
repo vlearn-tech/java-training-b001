@@ -12,10 +12,10 @@ public class ConsoleInput {
 	}
 
 	private static String getMessageFromConsole() {
-		Scanner scanner = new Scanner(System.in); // scan the console
+		Scanner sc = new Scanner(System.in); // scan the console
 		System.out.println("Enter your message here : ");
-		String scannedMessage = scanner.nextLine();
-		scanner.close();
+		String scannedMessage = sc.nextLine();
+		sc.close();
 		return scannedMessage;
 	}
 

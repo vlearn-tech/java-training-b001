@@ -27,5 +27,18 @@ public class VariableTypesAndFormatSpecifiers {
 
 		// Be Careful! Bears shouldn't infuriate large flying dragons
 
+		String nameOfSubject = "Oracle";
+		int howLongHaveYouBeenLearning = 1;
+
+		System.out.println(
+				String.format("I am learning %s since %d month(s)", nameOfSubject, howLongHaveYouBeenLearning));
+
+		String message = "I am learning " + nameOfSubject + " since last " + howLongHaveYouBeenLearning + " month(s)";
+
+		System.out
+				.println("I am learning " + nameOfSubject + " since last " + howLongHaveYouBeenLearning + " month(s)");
+
+		System.out.println(message);
+
 	}
 }
