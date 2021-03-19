@@ -22,7 +22,6 @@ public class AverageOfTwoNumbers {
 		// Print the average on the console
 		System.out.println(String.format("Average of %d and %d is %f", firstNumber, secondNumber,
 				calculateAverage(firstNumber, secondNumber)));
-
 	}
 
 	private static float calculateAverage(int firstNumber, int secondNumber) {
