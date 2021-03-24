@@ -25,6 +25,5 @@ public class GenericLoop {
 						// this loop will stay infinite
 			}
 		}
-
 	}
 }
