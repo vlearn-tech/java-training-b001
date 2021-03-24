@@ -37,7 +37,6 @@ public class SimpleIfElse {
 		if (age > 60) {
 			return true;
 		}
-
 		return false;
 	}
 
