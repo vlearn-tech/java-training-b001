@@ -12,6 +12,7 @@ public class ToggleCaseForPhrase {
 
 		// Loop through each letter in the phrase
 		for (char ch : phraseArray) {
+			// If letter is lower case, then change to upper case, else vice versa
 			if (ch >= 'a' && ch <= 'z') {
 				System.out.print(("" + ch).toUpperCase());
 			} else {
