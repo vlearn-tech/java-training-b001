@@ -22,7 +22,7 @@ public class BasicDateFunctions {
 
 		// Accept a date from user
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter your hire date into the company");
+		System.out.println("Enter your hire date into the company (dd-MMM-yyyy): ");
 		String hireDateInput = scanner.next();
 		scanner.close();
 
@@ -37,5 +37,9 @@ public class BasicDateFunctions {
 
 		// Find which date I will complete my 25th service anniversary
 		System.out.println("25th service anniversary : " + hireDate.plusYears(25));
+
+		// What is 2 years, 3 months and 5 days from today. Print in dd-MMM-yyyy format
+		System.out.println("2 years, 3 months and 5 days from today : "
+				+ today.plusYears(2).plusMonths(3).plusDays(5).format(formatterOne));
 	}
 }
