@@ -20,7 +20,7 @@ public class BasicDateFunctions {
 		DateTimeFormatter formatterTwo = DateTimeFormatter.ofPattern("MM/dd/yyyy");
 		System.out.println("Entered date is : " + birthdate.format(formatterTwo));
 
-		// Accept a date from user
+		// Accept a date from user in a particular format
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter your hire date into the company (dd-MMM-yyyy): ");
 		String hireDateInput = scanner.next();
