@@ -1,9 +1,9 @@
-package com.tech.javabasics.step12Classes;
+package com.tech.javabasics.step14StaticVariablesAndClasses;
 
 import java.time.LocalDate;
 import java.util.Arrays;
 
-public class Student {
+public class StudentWithDynamicId {
 	// attributes (nouns)
 	Long studentId;
 	String name;
@@ -11,6 +11,8 @@ public class Student {
 	LocalDate dateOfBirth;
 	Integer currentStandard;
 	String[] hobbies;
+
+	static Long lastStudentId = 1000L;
 
 	// activities (verbs)
 	public void participateInSports(String sport) {
@@ -32,9 +34,8 @@ public class Student {
 		System.out.println(String.format("Best friend of %s is %s", name, bestFriend));
 	}
 
-	public Student(Long studentId, String name, Integer currentStandard, LocalDate dateOfBirth, Character gender,
-			String[] hobbies) {
-		this.studentId = studentId;
+	public StudentWithDynamicId(String name, Integer currentStandard, LocalDate dateOfBirth, Character gender, String[] hobbies) {
+		this.studentId = ++lastStudentId;
 		this.name = name;
 		this.gender = gender;
 		this.dateOfBirth = dateOfBirth;
@@ -48,7 +49,7 @@ public class Student {
 				+ dateOfBirth + ", currentStandard=" + currentStandard + ", hobbies=" + Arrays.toString(hobbies) + "]";
 	}
 
-	public Student() {
+	public StudentWithDynamicId() {
 		// TODO Auto-generated constructor stub
 	}
 

@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class StudentRunner {
 	public static void main(String[] args) {
 
-		Student[] students = new Student[3];
+		Student[] students = new Student[4];
 		students[0] = new Student(1001L, "Magna", 10, LocalDate.of(1998, 10, 10), 'F',
 				new String[] { "Reading", "Singing" });
 		students[1] = new Student(1002L, "Ananya", 10, LocalDate.of(1998, 9, 9), 'F',
@@ -13,12 +13,16 @@ public class StudentRunner {
 		students[2] = new Student(1003L, "Annada", 10, LocalDate.of(1998, 8, 8), 'M',
 				new String[] { "Sports", "Driving" });
 
-//		studentOne.studentId = 1001L;
-//		studentOne.name = "Magna";
-//		studentOne.currentStandard = 10;
-//		studentOne.dateOfBirth = LocalDate.of(1998, 10, 10);
-//		studentOne.gender = 'F';
-//		studentOne.hobbies = new String[] { "Reading", "Singing" };
+		Student anotherNewStudent = new Student();
+
+		anotherNewStudent.studentId = 1004L;
+		anotherNewStudent.name = "Ashok";
+		anotherNewStudent.currentStandard = 10;
+		anotherNewStudent.dateOfBirth = LocalDate.of(1997, 12, 12);
+		anotherNewStudent.gender = 'M';
+		anotherNewStudent.hobbies = new String[] { "Ride Bike", "Hanging out" };
+
+		students[3] = anotherNewStudent;
 
 //		studentTwo.studentId = 1002L;
 //		studentTwo.name = "Ananya";
@@ -38,10 +42,14 @@ public class StudentRunner {
 		students[0].participateInSports("Basketball");
 		students[1].showHobbies();
 		students[2].showHobbies();
+		students[3].showHobbies();
 
 		// Which student has the highest Id
 		Student studentWithHighestId = findStudentWithHighestId(students);
 		System.out.println("Student with maxid is : " + studentWithHighestId);
+		System.out.println("\n\n======================================\n");
+		printAllStudentInfo(students);
+
 	}
 
 	private static Student findStudentWithHighestId(Student[] students) {
@@ -55,5 +63,11 @@ public class StudentRunner {
 			}
 		}
 		return studentWithMaxId;
+	}
+
+	private static void printAllStudentInfo(Student[] students) {
+		for (Student student : students) {
+			System.out.println(student);
+		}
 	}
 }
