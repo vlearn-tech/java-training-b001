@@ -90,8 +90,7 @@ public class Employee {
 	}
 
 	public Integer getAge() {
-		Long age = ChronoUnit.YEARS.between(dateOfBirth, LocalDate.now());
-		return age.intValue();
+		return ((Long) ChronoUnit.YEARS.between(dateOfBirth, LocalDate.now())).intValue();
 	}
 
 	@Override
