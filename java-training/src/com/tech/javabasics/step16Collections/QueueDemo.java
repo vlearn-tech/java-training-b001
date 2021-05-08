@@ -40,7 +40,7 @@ public class QueueDemo {
 		String personToMoveOut = peopleInQueue.get(peopleInQueue.size() - 1);
 		peopleInQueue.remove(peopleInQueue.size() - 1);
 		showQueue();
-//		System.out.println(personToMoveOut + " moved out");
+		System.out.println(personToMoveOut + " moved out");
 	}
 
 	private static void moveOut(String person) {

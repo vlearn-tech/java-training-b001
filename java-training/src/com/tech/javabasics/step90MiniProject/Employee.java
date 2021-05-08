@@ -3,6 +3,7 @@ package com.tech.javabasics.step90MiniProject;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
+@SuppressWarnings("unused")
 public class Employee {
 
 	private Long id;

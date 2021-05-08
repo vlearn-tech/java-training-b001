@@ -1,5 +1,6 @@
 package com.tech.javabasics.step09Arrays;
 
+@SuppressWarnings("unused")
 public class ArraysBasics {
 	public static void main(String[] args) {
 		int number1 = 10;
