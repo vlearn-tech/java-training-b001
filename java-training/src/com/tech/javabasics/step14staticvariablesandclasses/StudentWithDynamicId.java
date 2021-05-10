@@ -34,7 +34,8 @@ public class StudentWithDynamicId {
 		System.out.println(String.format("Best friend of %s is %s", name, bestFriend));
 	}
 
-	public StudentWithDynamicId(String name, Integer currentStandard, LocalDate dateOfBirth, Character gender, String[] hobbies) {
+	public StudentWithDynamicId(String name, Integer currentStandard, LocalDate dateOfBirth, Character gender,
+			String[] hobbies) {
 		this.studentId = ++lastStudentId;
 		this.name = name;
 		this.gender = gender;
@@ -50,7 +51,6 @@ public class StudentWithDynamicId {
 	}
 
 	public StudentWithDynamicId() {
-		// TODO Auto-generated constructor stub
 	}
 
 	// Create Constructor with arguments
